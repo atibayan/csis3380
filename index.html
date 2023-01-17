@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta name="author" content="Mia Tibayan">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>contacts</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+  <div class="page">
+    <div class="page-header cf">
+      <h2>Contacts</h2>
+      <h3>Total: </h3>
+    </div>
+    <div>
+      <label for="contactCount">Contacts to retrieve:</label>
+      <input type="text" name="contactCount" id="contactCount" value="50" onchange="updateContactList()">
+      <label for="contactCount">Contacts to display per page:</label>
+      <select name="contactPerSlide" id="contactPerSlide" onchange="renderPage(this)">
+        <option value="5">5</option>
+        <option value="10">10</option>
+        <option value="15">15</option>
+      </select>
+    </div>
+
+    <ul class="contact-list"></ul>
+
+    <!-- Add pagination links in this section -->
+    <div class="pagination"></div>
+  </div>
+  <script src="js/script.js"></script>
+</body>
+
+</html>
